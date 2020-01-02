@@ -13,11 +13,9 @@ CREATE TABLE
         PRIMARY KEY (id)
     );
 
-CREATE TABLE
-    hibernate_sequence
-    (
-        next_val BIGINT
-    );
+CREATE SEQUENCE
+    hibernate_sequence;
+   
 
 INSERT INTO bike (id, contact, email, model, name, phone, purchase_date, purchase_price)
   VALUES (1, 1, 'jeff@bikes.com', 'Globo MTB 29 Full Suspension', 'Jeff Miller', '328-443-5555', 4419619200000, '1100');
